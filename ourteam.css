@@ -12,6 +12,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover ;
+    overflow-x:hidden ;
 }
 
 header{
@@ -224,10 +225,10 @@ gap: 10px;
             width: 90px;
             font-size: 12px;
             margin: auto;
-           }
+    }
 
       .teamintro{
-        padding-inline: 40px;
+        padding-inline: 20px;
       }
 
       .teamintro h3{
@@ -242,28 +243,45 @@ gap: 10px;
 
       .groupteamdiv{
         grid-template-columns: auto;
+        margin-auto: 50px;
+        padding-inline: 20px;
+        
       }
-        footer{
-            display: grid;
-            grid-template-columns: 40% 40%;
-            column-gap: 60px;
-            row-gap: 10px;
-            padding-inline: 70px;
-            }
+       
+      .teamdiv{
+        margin: auto;
+      }
+
+      footer{
+        width: 350px;
+        display: grid;
+        grid-template-columns:repeat(3, 30%);
+        grid-template-rows: auto auto;
+        gap:5px;
+        margin: auto;
+        padding-inline:10px;
         
+        }
+        .footerdiv:first-child{
+        grid-column: 1 / -1;
+        margin: auto;
+        }
+    
+        footer .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
         .footerdiv{
-            width:100px;
-            }
-        
-        .logo{
-            font-size: 15px;
-            }
+        margin: auto;
+        }
+    
+        footer ul li, .footerdiv a, .footerdiv p{
+            font-size: 9px;
+        }
     
         .footerdiv ul .firstchild{
-            font-size: 13px;
-            }
-        
-            .footerdiv li, .footerdiv a, .footerdiv p{
-                font-size: 12px;
-            }
+            font-size: 12px;
+        }
     }

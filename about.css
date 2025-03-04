@@ -266,8 +266,10 @@ gap: 10px;
     *{
         margin: 0;
         padding: 0;
+        
     }
-    
+   
+
         header{
             display: block;
             text-align: center;
@@ -292,7 +294,7 @@ gap: 10px;
 
         #aboutone{
             padding-inline: 8px;
-            height: 45vh;
+            height: 75vh;
         }
 
         .figures{
@@ -301,16 +303,16 @@ gap: 10px;
         }
 
         .figures div{
-            font-size: 16px;
+            font-size: 10px;
         }
 
         .figures span{
-            font-size:10px;
+            font-size:8px;
             
         }
 
         .figures div .one{
-            padding-right: 8px;
+            margin-right: 8px;
         }
 
         #abouttwo{
@@ -326,31 +328,49 @@ gap: 10px;
         }
 
         #aboutthree main div{
+            display: block;
             font-size: 10px;
         }
 
-        
-    footer{
-        display: grid;
-        grid-template-columns: 40% 40%;
-        column-gap: 60px;
-        row-gap: 10px;
-        padding-inline: 70px;
-        }
-    
-        .footerdiv{
-            width:100px;
-        }
-    
-        .logo{
-            font-size: 15px;
+        #aboutthree main{
+            justify-content:center ;
         }
 
-        .footerdiv ul .firstchild{
-            font-size: 13px;
+        #aboutthree main i{
+            font-size: 10px;
+            padding: 5px;
         }
     
-        .footerdiv li, .footerdiv a, .footerdiv p{
-            font-size: 12px;
-        }
+        footer{
+            width: 350px;
+            display: grid;
+            grid-template-columns:repeat(3, 30%);
+            grid-template-rows: auto auto;
+            gap:5px;
+            margin: auto;
+            padding-inline:10px;
+            
+            }
+            .footerdiv:first-child{
+            grid-column: 1 / -1;
+            margin: auto;
+            }
+        
+            footer .logo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        
+            .footerdiv{
+            margin: auto;
+            }
+        
+            footer ul li, .footerdiv a, .footerdiv p{
+                font-size: 9px;
+            }
+        
+            .footerdiv ul .firstchild{
+                font-size: 12px;
+          }
     }       

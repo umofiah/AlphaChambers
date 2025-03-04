@@ -223,7 +223,7 @@ gap: 10px;
 
         .sectiondiv{
             grid-template-columns: auto;
-            padding-inline: 40px;
+            padding-inline: 20px;
         }
 
         .servicesec img{
@@ -254,116 +254,37 @@ gap: 10px;
            }
 
       
-
-        footer{
+           footer{
+            width: 350px;
             display: grid;
-            grid-template-columns: 40% 40%;
-            column-gap: 60px;
-            row-gap: 10px;
-            padding-inline: 70px;
+            grid-template-columns:repeat(3, 30%);
+            grid-template-rows: auto auto;
+            gap:5px;
+            margin: auto;
+            padding-inline:10px;
+            
+            }
+            .footerdiv:first-child{
+            grid-column: 1 / -1;
+            margin: auto;
             }
         
-        .footerdiv{
-            width:100px;
+            footer .logo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
         
-        .logo{
-            font-size: 15px;
-            }
-    
-        .footerdiv ul .firstchild{
-            font-size: 13px;
+            .footerdiv{
+            margin: auto;
             }
         
-        .footerdiv li, .footerdiv a, .footerdiv p{
+            footer ul li, .footerdiv a, .footerdiv p{
+                font-size: 9px;
+            }
+        
+            .footerdiv ul .firstchild{
                 font-size: 12px;
             }
         
 }
-/* 
-button{
-    height: 40px;
-    width: 140px;
-    color: white;
-    background-color: black;
-    font-size: 15px;
-    padding-inline: 30px;
-    border: 0;
-    border-radius: 5px;
-    text-align: center;
-}  */
-
-.btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-/* a:hover{
-    background-color: goldenrod;
-    color: darkred;
-    transition: background-color 0.3s ease;
-}
-
-
-img{
-    height: 800px;
-    width: 500px;
-}
-
-main{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 50px;
-}
-
-h1{
-    color: white;
-    font-style: italic;
-}
-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-h6{
-    font-size: 25px;
-    padding: 10px;
-    color: #fffff0;
-}
-
-ul{
-    padding: 40px;
-}
-
-li:hover{
-    color: goldenrod;
-    transition: color 0.3s ease;
-}
-li{
-    font-size: 30px;
-    color: white;
-    padding: 15px;
-}
-
-h5{
-    color: #fdfdfd;
-    font-size: 20px;
-padding: 10px;
-}
-
-button{
-    background-color: goldenrod;
-    color: white;
-    border: none;
-    padding: 15px 20px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover{
-    background-color: gray;
-} */

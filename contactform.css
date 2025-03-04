@@ -247,7 +247,7 @@ gap: 10px;
 
 
         #contactform{
-            height: 110vh;
+            height: 200vh;
             margin: 0;
             padding: 0;
             }
@@ -257,16 +257,13 @@ gap: 10px;
             }
         
             .formsection{
-            position: absolute;
-            gap: px;
-            height: 25vh;
+            height: 100vh;
             }
         
             .formdiv{
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            height: 99vh;
+            flex-direction: column-reverse;
+            height: 160vh;
+            border-radius: 5px;
             }
         
             .formdiv h2{
@@ -278,118 +275,61 @@ gap: 10px;
             flex-direction: column;
             }
         
-            input[type=mail], input[type=tel], input[type=text], option{
+            input[type=mail], input[type=tel], input[type=text], select, option{
                 width: 200px;
-                height: 15px;
+                height: 30px;
+            }
+        
+            .submitbtn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         
             aside{
-                width: 28vh;
-                height: 25vh;
-                position: absolute;
-                top: 0;  
-                
+                width: 30vh;
+                height: 40vh;
+                border-radius: 5px;
             }
 
             .mapdiv{
-                width: 345;
-                height: 250;
+                width: 400;
+                height: 200;
                 margin: auto;
                 padding-inline: 30px;
                 padding-block: 20px;
             }
-        
             footer{
-            display: grid;
-            grid-template-columns: 40% 40%;
-            column-gap: 60px;
-            row-gap: 10px;
-            padding-inline: 70px;
-            }
-        
-            .footerdiv{
-                width:100px;
-            }
-        
-            .logo{
-                font-size: 15px;
-            }
-        
-            .footerdiv li, .footerdiv a, .footerdiv p{
-                font-size: 12px;
-            }
+                width: 350px;
+                display: grid;
+                grid-template-columns:repeat(3, 30%);
+                grid-template-rows: auto auto;
+                gap:5px;
+                margin: auto;
+                padding-inline:10px;
+                
+                }
+                .footerdiv:first-child{
+                grid-column: 1 / -1;
+                margin: auto;
+                }
+            
+                footer .logo {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            
+                .footerdiv{
+                margin: auto;
+                }
+            
+                footer ul li, .footerdiv a, .footerdiv p{
+                    font-size: 9px;
+                }
+            
+                .footerdiv ul .firstchild{
+                    font-size: 12px;
+                }
     }
-
-/* form{
-    border: 1px solid black;
-    padding:20px;
-background-color: white;
-border-radius: 10px;
-}
-
-h1{
-    text-align: center;
-}
-
-.formdiv{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    height: 100vh;
-}
-
-input{
-    width: 150px;
-    height: 25px;
-}
-
-input[type=email]{
-    width: 475px;
-    
-}
-
-input[type=submit]{
-background-color: goldenrod;
-border-radius: 5px;
-height: 30px;
-margin: 8px;
-width: 80px;
-font-size: 17px;
-}
-
-input[type=submit]:hover{
-    background-color: white;
-    color: #550000;
-}
-
-.contactflex{
-    display: flex;
-    gap: 10px;
-    
-}
-
-.contactdiv2{
-    display: flex;
-    gap: 10px;
-}
-
-.addressdiv input[type=text]{
- width: 310px;   
-}
-
-
-input[type=select]{
-    width: 200px;
-}
-
-select{
-    width:480px;
-    height:30px;
-}
-
-
-.contactdiv h5{
- display: flex;   
-} */
+ #550000

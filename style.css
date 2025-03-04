@@ -26,7 +26,7 @@
 
 header{
     display: flex;
-    background-color:black;
+    background-color:transparent;
     justify-content: space-between;
     justify-items: center;
     align-items: center;
@@ -63,6 +63,7 @@ span{
     /* color: #00CED1; */
     /* color: #00BFFF; */
     /* color: #1560bd; */
+    /* color: #F0E2B6; */
     
 }
 
@@ -526,7 +527,7 @@ flex-direction: column;
 
     nav a{
         display: block;
-        font-size: 15px;
+        font-size: 12px;
     }
 
     nav a:hover{
@@ -534,18 +535,18 @@ flex-direction: column;
     }
 
     #index{
-        height: 120vh;
-        padding-inline: 40px;
+        height: 155vh;
+        padding-inline: 20px;
     }
     
     #index main{
         flex-direction: column-reverse;
         margin: auto;
-        padding-inline: 40px;
+        padding-inline: 20px;
     }
 
     #index .main2 img{
-        width:330px;
+        width:300px;
         height: 30vh;
         margin: auto;
 
@@ -579,8 +580,7 @@ flex-direction: column;
     }
 
     #about{
-        height: 40vh;
-        width: 50vh;
+        height: 70vh;
         font-size: 12px;
         padding-inline: 40px;
     }
@@ -606,7 +606,7 @@ flex-direction: column;
     }
 
     #services{
-        height: 110vh;
+        height: 160vh;
         padding-inline: 40px;
     }
 
@@ -622,9 +622,13 @@ flex-direction: column;
 
     .servicesdiv{
         margin-block:10px ;
-        font-size: 20px;
         justify-content: center;
         align-items: center;
+    }
+
+    .servicesdiv h5{
+        font-size: 10px;
+        text-align: center;
     }
 
     .servicestop{
@@ -632,17 +636,17 @@ flex-direction: column;
     }
     
     #ourteam{
-        padding-inline: 40px;
+        padding-inline: 20px;
         flex-direction: column;
-        height: 70vh;
+        height: 90vh;
     }
 
     #ourteam h4, #ourteam h3,  #testimonials h3{
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .teamimg{
-        width:350px;
+        width:300px;
         height: 30vh;
     }
 
@@ -653,8 +657,8 @@ flex-direction: column;
     }
 
     #testimonials{
-        height: 90vh;
-        padding-inline: 30px;
+        height: 120vh;
+        padding-inline: 20px;
     }
 
    .testimonial{
@@ -665,7 +669,7 @@ flex-direction: column;
 
    .test{
     margin: auto;
-    height: 23vh;
+    height: 30vh;
     width: 30vh;
     gap: 10px;
     }
@@ -675,7 +679,7 @@ flex-direction: column;
     }
 
     #contactform{
-    height: 110vh;
+    height: 150vh;
     margin: 0;
     padding: 0;
     }
@@ -685,15 +689,12 @@ flex-direction: column;
     }
 
     .formsection{
-    position: absolute;
-    height: 25vh;
+    height: 70vh;
     }
 
     .formdiv{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 99vh;
+    flex-direction: column-reverse;
+    height: 140vh;
     }
 
     .formdiv h2{
@@ -710,28 +711,48 @@ flex-direction: column;
         height: 30px;
     }
 
+    .submitbtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     aside{
         width: 28vh;
-        height: 25vh;
-        position: absolute;
-        top: 0;  
-        
+        height: 30vh;
+        border-radius: 5px;
     }
 
     footer{
+    width: 355px;
     display: grid;
-    grid-template-columns: 40% 40%;
-    column-gap: 60px;
-    row-gap: 10px;
-    padding-inline: 60px;
+    grid-template-columns:repeat(3, 30%);
+    grid-template-rows: auto auto;
+    gap:5px;
+    margin: auto;
+    padding-inline:10px;
+    
+    }
+    .footerdiv:first-child{
+    grid-column: 1 / -1;
+    margin: auto;
+    }
+
+    footer .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .footerdiv{
-        width:100px;
+    margin: auto;
     }
 
+    footer ul li, .footerdiv a, .footerdiv p{
+        font-size: 9px;
+    }
 
-    footer .li, footer a{
+    .footerdiv ul .firstchild{
         font-size: 12px;
     }
 }
