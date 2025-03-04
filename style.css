@@ -1,0 +1,737 @@
+*{
+    margin:0;
+    padding: 0px;
+    border:0px;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    /* text-align:justify; */
+}
+
+.backgroundimg{
+    background: url(images/judge-8842046_1280.png);
+    background-blend-mode: multiply;
+    background-color: rgb(59, 59, 59);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#index{
+    padding-bottom: 30px;
+    height: 100vh;
+    
+}
+
+header{
+    display: flex;
+    background-color:black;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding-inline: 100px; 
+}
+
+.headerlogo{
+    width: 140px;
+    height: 110px;
+    filter: drop-shadow(0 0 8px black);
+}
+
+#index .main1{
+    color: white;
+    padding-block: 60px;
+}
+
+#index p{
+    font-size: 18px;
+}
+
+#index h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+    
+}
+
+span{
+    color: #ff5733;
+    /* color:#89CFF0; */
+    /* color: #00BFFF; */
+    /* color: #00BFFF; */
+    /* color: #1F75FE; */
+    /* color: #00CED1; */
+    /* color: #00BFFF; */
+    /* color: #1560bd; */
+    
+}
+
+
+#index main{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-inline: 105px;
+    
+}
+
+.main2 img{
+height: 380px;
+width: 420px;
+border-radius: 5px;
+border: 3px solid white;
+}
+
+button{
+    height: 35px;
+    width: 120px;
+    /* background-color: #1560bd; */
+    background-color: #ff5733;
+    /* border:1px solid white; */
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #c94427;
+}
+
+#highlight{
+    border-bottom: 3px solid #c94427;
+    /* border-bottom: 2px solid #1560bd; */
+    border-radius: 3px;
+    transition: ease-in-out 1s;
+}
+
+a button:active{
+    background-color: white;
+    color:black;
+}
+
+
+nav a{
+    text-decoration: none;
+    padding: 15px;
+    color: #ff5733;
+    /* color: #1560bd; */
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    background-color: #ff5733;
+    /* background-color: #1560bd; */
+    color: white;
+    border-radius: 5px;
+    transition: ease-in-out 1s;
+}
+
+nav a:active{
+    color:white ;
+    background-color: black;
+    border-radius: 5px;
+}
+
+
+#about{   
+    height: 60vh;
+    justify-content: space-between;
+    padding-inline: 130px;
+    align-items: center;
+    padding-block: 80px;
+    border-top: 8px solid white;
+    background-color: whitesmoke;
+}
+
+ a{
+text-decoration: none;
+color: white;
+   
+}
+
+#about main p{
+    color: black;
+    padding-block: 15px;
+    font-weight: 500;
+}
+
+#about h3{
+    font-size: 48px;
+    padding-top: 20px;
+   color: black;
+}
+
+h4{
+    color:#ff5733;
+    font-size: 23px;
+}
+
+.aboutintro{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#services{
+    height: 80vh;
+    padding-inline: 140px;
+    padding-block: 60px;
+    border-top:8px solid white;
+}
+
+
+
+#services h3{
+    font-size: 45px;
+    color:white;
+}
+
+.servicestop{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding-block: 20px;
+}
+
+#services h5{
+    font-size: 18px;
+}
+
+
+.servicesgroup button{
+    margin-bottom: 0px;
+    
+}
+
+
+.servicesdiv i{
+    color: #ff5733;
+    font-size: 1.5rem;
+    animation-name: icon;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes icon{
+    0%{transform: rotate(45deg);}
+   50%{transform: rotate(-45deg);}
+}
+
+
+.servicesdiv h6{
+    font-size: 20px;
+}
+
+.servicesgroup{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    gap: 20px;
+}
+
+.servicesdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 10px;
+    border: 1px solid white;
+    gap: 5px;
+    background-color: black;
+    color:white;
+    padding-inline: 10px;
+    padding-block: 20px;
+    border-bottom: 3px solid #ff5733;
+    border-radius: 5px;
+}
+
+.servicesdiv h5, .services p{
+    padding-bottom: 10px;
+}
+#ourteam{
+    border-top:8px solid white;
+    padding-block: 60px;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding-inline: 140px;
+    background-color: white;
+}
+
+.navyteam{
+    color: black;
+    padding: 40px;
+}
+
+.navyteam h4, .navyteam h3, .navyteam p{
+padding-bottom: 30px;
+}
+
+.navyteam h3{
+    font-size: 40px;
+}
+
+.navyteam p{
+    text-align: justify;
+}
+
+.teamimg{
+    width:450px;
+    height:70vh;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.btn{
+    display: flex;
+    align-content: center;
+}
+
+#testimonials{
+    border-top: 8px solid white;
+    height: 80vh;
+    padding-block: 40px;
+    padding-inline: 80px;
+    text-align: center;
+}
+
+#testimonials h3{
+    font-size: 40px;
+    color:white;
+}
+
+.testimonial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 30px;
+}
+
+.test{
+    border: 1px solid #ff5733;
+    display: flex;
+    justify-content:space-between;
+    padding: 15px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    border-bottom: 4px solid #ff5733;
+    height: 250px;
+    width: 270px;
+}
+
+.test h6{
+    padding-block: 30px;
+    font-size: 13px;
+}
+
+.test p{
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#contactform{
+    background-color: white;
+}
+
+.formdiv{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 78%;
+    padding: 18px;
+    margin-block: 60px;
+    border: 4px solid #ff5733;
+}
+
+.formsection{
+    background-color: transparent;
+    width: 72%;
+    height: 390px;
+    padding-block: 10px;
+    color: white;
+    padding: 20px;
+}
+
+.formsection h2, .formsection h4, form{
+    padding-block: 15px;
+}
+
+
+aside{
+    height: 360px;
+    width: 30vh;
+    background-color: #ff5733;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+aside p{
+    font-size: 12px;
+    padding: 5px;
+}
+
+aside h3{
+    padding: 5px;
+}
+
+#contactform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 36px;
+}
+
+.formsection h2{
+font-weight: bolder;
+font-size: 30px;
+color: #ff5733 ;
+}
+.formsection h4{
+    font-size: 15px;
+    color: white;
+}
+
+.divform{
+    padding: 5px;
+}
+
+.formflex{
+    display: flex;
+
+}
+
+input[type=text], [type=tel], [type=mail]{
+    width: 300px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    border: 2px solid #ff5733;
+}
+
+input[type=submit]{
+    height: 35px;
+    width: 100px;
+    background-color: #ff5733;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-size: 14px;
+    font-weight: 600;
+    margin-block: 30px;
+    margin-inline: 5px;
+    color: white;
+}
+
+
+input[type=submit]:hover{
+    background-color: #c94427;
+}
+
+input[type=submit]:active{
+    background-color: black;
+    color:#ff5733;
+}
+
+select{
+    background-color: whitesmoke;
+    color: black;
+    width: 310px;
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid #ff5733;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding-inline: 80px;
+    padding-block: 5px;
+    font-size: 13px;
+}
+
+.footerdiv ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:white;
+}
+
+.footerdiv li{
+    list-style: none;
+    text-align: left;
+    padding-block: 3px;
+    color:white;
+}
+.footerdiv li a{
+    color:white;
+}
+
+.footerdiv li a:hover{
+    color: #ff5733;
+}
+
+.footerdiv li a:active{
+    background-color: white;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+ #fd1{
+display: flex;
+flex-direction: column;
+}
+
+.footerdiv ul .firstchild{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+@media screen and (max-width:768px) {
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-x: clip;
+}
+
+
+.backgroundimg{
+    padding: none;
+    border: none;
+    margin: none;
+}
+    header{
+        display: block;
+        text-align: center;
+    }
+
+    nav a{
+        display: block;
+        font-size: 15px;
+    }
+
+    nav a:hover{
+        background-color: #ff5733;
+    }
+
+    #index{
+        height: 120vh;
+        padding-inline: 40px;
+    }
+    
+    #index main{
+        flex-direction: column-reverse;
+        margin: auto;
+        padding-inline: 40px;
+    }
+
+    #index .main2 img{
+        width:330px;
+        height: 30vh;
+        margin: auto;
+
+    }
+
+    #index .main2{
+        margin-top: 40px;
+    }
+
+    #index .main1{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #index .main1 h2{
+        font-size: 25px;
+    }
+
+    #index .main1 p{
+        font-size: 14px;
+        flex-wrap: wrap;
+        margin-block: 20px;
+    }
+
+    button{
+     width: 80px;
+     font-size: 12px;
+     margin: auto;
+    }
+
+    #about{
+        height: 40vh;
+        width: 50vh;
+        font-size: 12px;
+        padding-inline: 40px;
+    }
+
+    #about h3{
+        font-size: 25px;
+    }
+
+    .btn{
+        width: 35vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-block: 5px;
+    }
+
+    #about main p{
+        display: flex;
+        font-size: 15px;
+        font-weight: 300;
+        flex-wrap: wrap;
+        width: 40vh;
+    }
+
+    #services{
+        height: 110vh;
+        padding-inline: 40px;
+    }
+
+    #services h3{
+        font-size: 25px;
+    }
+
+    .servicesgroup{
+        grid-template-columns: auto ;
+        margin: auto;
+        width: 30vh;
+    }
+
+    .servicesdiv{
+        margin-block:10px ;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .servicestop{
+        text-align: center;
+    }
+    
+    #ourteam{
+        padding-inline: 40px;
+        flex-direction: column;
+        height: 70vh;
+    }
+
+    #ourteam h4, #ourteam h3,  #testimonials h3{
+        font-size: 22px;
+    }
+
+    .teamimg{
+        width:350px;
+        height: 30vh;
+    }
+
+    .teamimgdiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #testimonials{
+        height: 90vh;
+        padding-inline: 30px;
+    }
+
+   .testimonial{
+    display: block;
+    gap: 15px;
+   }
+    
+
+   .test{
+    margin: auto;
+    height: 23vh;
+    width: 30vh;
+    gap: 10px;
+    }
+
+    .test h6, .test p{
+    font-size: 12px;
+    }
+
+    #contactform{
+    height: 110vh;
+    margin: 0;
+    padding: 0;
+    }
+
+    #contactform h4, #contactform h5{
+    font-size: 10px;
+    }
+
+    .formsection{
+    position: absolute;
+    height: 25vh;
+    }
+
+    .formdiv{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 99vh;
+    }
+
+    .formdiv h2{
+    font-size: 25px;
+    }
+
+    .formflex{
+    display: flex;
+    flex-direction: column;
+    }
+
+    input[type=mail], input[type=tel], input[type=text], select, option{
+        width: 200px;
+        height: 30px;
+    }
+
+    aside{
+        width: 28vh;
+        height: 25vh;
+        position: absolute;
+        top: 0;  
+        
+    }
+
+    footer{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    column-gap: 60px;
+    row-gap: 10px;
+    padding-inline: 60px;
+    }
+
+    .footerdiv{
+        width:100px;
+    }
+
+
+    footer .li, footer a{
+        font-size: 12px;
+    }
+}

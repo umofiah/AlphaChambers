@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+}
+
+body{
+    background: url(images/judge-8842046_1280.png);
+    background-blend-mode: multiply;
+    background-color: rgb(70, 69, 69);
+    background-position:center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+header{
+    display: flex;
+    background-color:black;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding-inline: 100px; 
+}
+
+.headerlogo{
+    width: 140px;
+    height: 110px;
+    filter: drop-shadow(0 0 8px black);
+}
+
+a{
+    text-decoration: none;
+    color: white;   
+ }
+
+ #highlight{
+    border-bottom: 3px solid #ff5733;
+    border-radius: 2px;
+    transition: ease-in-out 1s;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 15px;
+    color: #ff5733;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    background-color: #ff5733;
+    color: white;
+    border-radius: 5px;
+    transition: ease-in-out 1s;
+}
+
+nav a:active{
+    color:white ;
+    background-color: black;
+    border-radius: 5px;
+}
+
+#aboutone{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    padding-inline: 60px;
+    padding-bottom: 20px;
+    gap: 10px;
+}
+
+#aboutone main{
+    padding-inline: 60px;
+}
+
+
+#aboutone main p{
+    color: white;
+    padding-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    text-align: justify;
+}
+
+
+.aboutintro h4{
+    text-align: left;
+    font-size: 30px;
+    color: white;
+    padding-inline: 55px;
+    padding-top: 80px;
+    color:#ff5733;
+}
+
+.figures{
+    color: #ff5733;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 120px;
+    padding-block: 40px;
+}
+
+.figures div{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    gap: 8px;
+}
+
+.figures span{
+    font-size: 20px;
+}
+
+.anifigures1{
+    animation-name: Ruby;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    
+}
+
+.anifigures2{
+    animation-name: Ruby;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
+}
+
+.anifigures3{
+    animation-name: Ruby;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay:2s ;
+    animation-timing-function: ease-in;
+}
+
+@keyframes Ruby{
+0%{color: #ff5733;}
+50%{color: white;}
+}
+
+.figures div .one{
+border-right: #ff5733 1px solid;
+padding-right: 30px;
+}
+
+#abouttwo, #aboutthree{
+    border-top: 8px solid white;
+    padding-inline: 60px;
+}
+
+#abouttwo main{
+    color:white;
+    font-size: 15px;
+    padding-inline: 60px;
+    padding-block: 40px;
+}
+
+#abouttwo main ul li{
+    margin-top: 10px;
+}
+
+#aboutthree main{
+    padding-inline: 100px;
+    padding-block: 40px;
+    display:flex;
+    color: white;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+#aboutthree main div i{
+    font-size: 1.5rem;
+    color:white;
+}
+
+.imgclass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 20px;
+}
+
+button{
+    height: 45px;
+    width: 150px;
+    color: black;
+    background-color: #ff5733;
+    border: 1px solid white;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: #c94427;
+}
+
+a button:active{
+    background-color: white;
+    color:black;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding-inline: 30px;
+    padding-block: 5px;
+    font-size: 13px;
+}
+
+.footerdiv ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.footerdiv li{
+    list-style: none;
+    text-align: left;
+    padding-block: 3px;
+}
+
+.footerdiv li a:hover{
+    color: #ff5733;
+}
+
+.footerdiv li a:active{
+    background-color: white;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+#fd1{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.footerdiv ul .firstchild{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+@media screen and (max-width:768px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+        header{
+            display: block;
+            text-align: center;
+        }
+    
+        nav a{
+            display: block;
+        }
+    
+        nav a{
+            font-size: 15px;
+        }
+    
+        nav a:hover{
+            background-color: #ff5733;
+        }
+
+        .aboutintro h4{
+            text-align: center;
+            font-size: 20px;
+        }
+
+        #aboutone{
+            padding-inline: 8px;
+            height: 45vh;
+        }
+
+        .figures{
+            padding-inline: 10px;
+            padding-block: 20px;
+        }
+
+        .figures div{
+            font-size: 16px;
+        }
+
+        .figures span{
+            font-size:10px;
+            
+        }
+
+        .figures div .one{
+            padding-right: 8px;
+        }
+
+        #abouttwo{
+            padding-inline: 8px;
+        }
+
+        #abouttwo ul{
+            text-align: justify;
+        }
+
+        #aboutone main p, #abouttwo main ul li{
+            font-size: 12px;
+        }
+
+        #aboutthree main div{
+            font-size: 10px;
+        }
+
+        
+    footer{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        column-gap: 60px;
+        row-gap: 10px;
+        padding-inline: 70px;
+        }
+    
+        .footerdiv{
+            width:100px;
+        }
+    
+        .logo{
+            font-size: 15px;
+        }
+
+        .footerdiv ul .firstchild{
+            font-size: 13px;
+        }
+    
+        .footerdiv li, .footerdiv a, .footerdiv p{
+            font-size: 12px;
+        }
+    }       

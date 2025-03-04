@@ -1,0 +1,369 @@
+*{
+    margin:0px;
+    border:0px;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body{
+    background: url(images/judge-8842046_1280.png);
+    background-blend-mode: multiply;
+    background-color: rgb(36, 35, 35);
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+header{
+    display: flex;
+    background-color:black;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding-inline: 100px; 
+}
+
+.headerlogo{
+    width: 140px;
+    height: 110px;
+    filter: drop-shadow(0 0 8px black);
+}
+
+button{
+    height: 48px;
+    width: 150px;
+    background-color: #ff5733;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: #c94427;
+}
+
+a button:active{
+    background-color: black;
+    color:white;
+}
+
+#highlight{
+    border-bottom: 3px solid #ff5733;
+    border-radius: 2px;
+    transition: ease-in-out 1s;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 15px;
+    color: #ff5733;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    background-color: #ff5733;
+    color: white;
+    border-radius: 5px;
+    transition: ease-in-out 1s;
+}
+
+nav a:active{
+    color:white ;
+    background-color: black;
+    border-radius: 5px;
+}
+
+main{
+    color: white;
+    padding-block: 50px;
+    padding-inline: 120px;
+    font-weight: 600;
+}
+
+.sectiondiv{
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-inline: 110px;
+    padding-block: 40px;
+    gap: 20px;
+    
+}
+
+.servicesec img{
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.servicesec{
+    background-color: black;
+    color: white;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.servicesec:hover{
+    box-shadow: 2px 2px 3px 3px black(58, 58, 58);
+    transition: 1s ease-in-out;
+}
+
+h3, h4, p{
+    padding-block: 10px;
+}
+
+h3{
+    font-size: 30px;
+    color: #ff5733;
+}
+
+h4{
+    font-size: 30px;
+}
+
+p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding-inline: 80px;
+    padding-block: 5px;
+    font-size: 13px;
+}
+
+.footerdiv ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.footerdiv li{
+    list-style: none;
+    text-align: left;
+    padding-block: 3px;
+}
+ #fd1{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.footerdiv ul .firstchild{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.footerdiv a, button a{
+    color: white;
+    text-decoration: none;
+}
+
+.footerdiv li a:hover{
+    color: #ff5733;
+}
+
+.footerdiv li a:active{
+    background-color: white;
+    padding: 5px;
+    border-radius: 2px;
+}
+ 
+@media screen and (max-width:768px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+        header{
+            display: block;
+            text-align: center;
+        }
+    
+        nav a{
+            display: block;
+        }
+    
+        nav a{
+            font-size: 15px;
+        }
+    
+        nav a:hover{
+            background-color: #ff5733;
+        }
+
+        main{
+            padding-inline: 40px;
+        }
+
+        main h3{
+            font-size: 20px;
+            text-align: center;
+        }
+
+        main p{
+            font-size: 12px;
+        }
+
+        .sectiondiv{
+            grid-template-columns: auto;
+            padding-inline: 40px;
+        }
+
+        .servicesec img{
+           margin: auto;
+        }
+
+        .servicesec h3{
+            font-size: 20px;
+        }
+
+        .servicesec h4{
+            font-size: 15px;
+        }
+
+        .servicesec p{
+            font-size: 12px;
+        }
+
+        .servicesec img{
+            width: 250px;
+            height: 150px;
+        }
+
+        button{
+            width: 90px;
+            font-size: 12px;
+            margin: auto;
+           }
+
+      
+
+        footer{
+            display: grid;
+            grid-template-columns: 40% 40%;
+            column-gap: 60px;
+            row-gap: 10px;
+            padding-inline: 70px;
+            }
+        
+        .footerdiv{
+            width:100px;
+            }
+        
+        .logo{
+            font-size: 15px;
+            }
+    
+        .footerdiv ul .firstchild{
+            font-size: 13px;
+            }
+        
+        .footerdiv li, .footerdiv a, .footerdiv p{
+                font-size: 12px;
+            }
+        
+}
+/* 
+button{
+    height: 40px;
+    width: 140px;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    padding-inline: 30px;
+    border: 0;
+    border-radius: 5px;
+    text-align: center;
+}  */
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+/* a:hover{
+    background-color: goldenrod;
+    color: darkred;
+    transition: background-color 0.3s ease;
+}
+
+
+img{
+    height: 800px;
+    width: 500px;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+h1{
+    color: white;
+    font-style: italic;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h6{
+    font-size: 25px;
+    padding: 10px;
+    color: #fffff0;
+}
+
+ul{
+    padding: 40px;
+}
+
+li:hover{
+    color: goldenrod;
+    transition: color 0.3s ease;
+}
+li{
+    font-size: 30px;
+    color: white;
+    padding: 15px;
+}
+
+h5{
+    color: #fdfdfd;
+    font-size: 20px;
+padding: 10px;
+}
+
+button{
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: gray;
+} */
