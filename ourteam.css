@@ -12,16 +12,16 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover ;
-    overflow-x:hidden ;
 }
-
 header{
     display: flex;
-    background-color:black;
-    justify-content: space-between;
-    justify-items: center;
+    flex-direction: column;
+    background-color:rgb(1, 1, 48);
+    justify-content: center;
     align-items: center;
-    padding-inline: 100px; 
+    position: fixed;
+    height: 100%;
+    text-align: center;
 }
 
 .headerlogo{
@@ -36,11 +36,12 @@ header{
     padding-block: 80px;
     color: white;
     font-weight: 600;
+    margin-left: 60px;
 }
 
 .teamintro h3{
     font-size: 32px;
-    color:#ff5733;
+    color:#daa320;
 }
 
 .teamintro p{
@@ -60,6 +61,7 @@ header{
     color: white;
     border-radius: 10px;
     padding-bottom: 10px;
+    margin-left: 80px;
 }
 
 .teamdiv img{
@@ -69,7 +71,7 @@ header{
 }
 
 .teamdiv:hover{
-    border: 2px solid #ff5733;
+    border: 2px solid #daa520;
     transform: scale(1.2) ;
     transition: 2s ease-in-out;
     
@@ -82,11 +84,12 @@ header{
     gap: 20px;
     justify-content: space-around;
     padding-inline: 80px;
+    margin-left: 20px;
 }
 
 .teamdiv h4{
 font-size: 18px;
-color: #ff5733;
+color: #daa520;
 }
 
 .teamdiv p{
@@ -97,7 +100,7 @@ button{
     height: 48px;
     width: 150px;
     color: black;
-    background-color: #ff5733;
+    background-color: #daa520;
     border-radius: 5px;
     border: 1px solid white;
     font-size: 14px;
@@ -107,7 +110,7 @@ button{
 }
 
 button:hover{
-    background-color: #c94427;
+    background-color: rgb(1, 1, 48);
 }
 
 a button:active{
@@ -116,24 +119,42 @@ a button:active{
 }
 
 #highlight{
-    border-bottom: 3px solid #ff5733;
-    border-radius: 2px;
-    transition: ease-in-out 1s;
+    color: #daa520;
+    transition: ease-in 1s;
 }
+
+#highlight:hover{
+    color: white;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: end;
+    align-items: center;
+}
+
 
 nav a{
     text-decoration: none;
-    padding: 15px;
-    color: #ff5733;
+    padding-block: 15px;
+    color: white;
     font-size: 15px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav a:hover{
-    background-color: #ff5733;
+    background-color: #daa520;
+    padding-inline: 5px;
     color: white;
     border-radius: 5px;
-    transition: ease-in-out 1s;
+    width: 120px;
+    transition: ease-in-out 0.5s;
+    text-align: center;
 }
 
 nav a:active{
@@ -142,12 +163,17 @@ nav a:active{
     border-radius: 5px;
 }
 
+nav a i{
+    font-size: 11px;
+    padding-right: 5px;
+}
 
 .btn{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-block: 40px;
+    margin-left: 100px;
 }
 
 
@@ -159,6 +185,7 @@ footer{
     padding-inline: 80px;
     padding-block: 5px;
     font-size: 13px;
+    margin-left: 30px;
 }
 
 .footerdiv ul{
@@ -189,7 +216,7 @@ gap: 10px;
 }
 
 .footerdiv li a:hover{
-    color: #ff5733;
+    color: #daa520;
 }
 
 .footerdiv li a:active{
@@ -202,24 +229,59 @@ gap: 10px;
     *{
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
+        overflow-x: clip;
+        
     }
     
-        header{
-            display: block;
-            text-align: center;
-        }
     
-        nav a{
-            display: block;
-        }
+
+    header{ 
+        padding-inline: 20px;
+        padding-block: 20px;
+        height: 90px;
+        width: 90%; 
+        margin: auto;
+
+       
+    }
     
-        nav a{
-            font-size: 15px;
-        }
+    header .logo img{
+       justify-content: center;
+    }
     
-        nav a:hover{
-            background-color: #ff5733;
-        }
+    nav{ 
+       background-color: rgb(1, 1, 48);
+       justify-content: center;
+       align-items: center;
+       flex-direction: row;
+       justify-content: space-evenly;
+       padding-inline: 30px;
+       width: 100%;
+    }
+    
+    nav a{
+        font-size: 8px;
+        padding-block: 10px;
+        padding-inline: 5px;
+    }
+    
+    nav a:hover{
+        width: 65px;
+    }
+    
+    nav a:active{
+        width: 65px;
+    }
+
+    nav a i{
+        font-size: 5px;
+    }
+    
+    .btn{
+        margin: auto;
+        padding-block: 50px;
+    }
 
         button{
             width: 90px;
@@ -228,7 +290,11 @@ gap: 10px;
     }
 
       .teamintro{
-        padding-inline: 20px;
+        padding-inline: 40px;
+        width: 80vw;
+        padding-top: 150px;
+        margin: auto;
+        top: 120px;
       }
 
       .teamintro h3{
@@ -238,18 +304,22 @@ gap: 10px;
       }
 
       .teamintro p{
-        font-size: 15px;
+        font-size: 10px;
       }
 
       .groupteamdiv{
         grid-template-columns: auto;
-        margin-auto: 50px;
         padding-inline: 20px;
-        
+        margin: auto;
       }
        
       .teamdiv{
         margin: auto;
+        height: 300px;
+      }
+
+      .teamdiv h4, .teamdiv p{
+        font-size: 10px;
       }
 
       footer{
@@ -259,7 +329,7 @@ gap: 10px;
         grid-template-rows: auto auto;
         gap:5px;
         margin: auto;
-        padding-inline:10px;
+        padding-inline:30px;
         
         }
         .footerdiv:first-child{

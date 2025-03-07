@@ -13,6 +13,7 @@ body{
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
+ 
    
 }
 
@@ -25,11 +26,13 @@ body{
 
 header{
     display: flex;
-    background-color:black;
-    justify-content: space-between;
-    justify-items: center;
+    flex-direction: column;
+    background-color:rgb(1, 1, 48);
+    justify-content: center;
     align-items: center;
-    padding-inline: 100px; 
+    position: fixed;
+    height: 100%;
+    text-align: center;
 }
 
 .headerlogo{
@@ -38,49 +41,51 @@ header{
     filter: drop-shadow(0 0 8px black);
 }
 
+.bodydiv{
+    margin-left: 80px;
+}
 
-input[type=submit]{
-    height: 35px;
-    width: 100px;
-    color: black;
-    background-color: #ff5733;
-    border-radius: 5px;
-    border: 1px solid white;
-    font-size: 14px;
+h2{
     color: white;
-    font-weight: 600;
-    margin-block: 15px;
-    margin-inline: 5px;
-}
-
-input[type=submit]:hover{
-    background-color: #c94427;
-}
-
-input[type=submit]:active{
-    background-color: black;
-    color:#ff5733;
 }
 
 #highlight{
-    border-bottom: 3px solid #ff5733;
-    border-radius: 2px;
-    transition: ease-in-out 1s;
+    color: #daa520;
+    transition: ease-in 1s;
+}
+
+#highlight:hover{
+    color: white;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: end;
+    align-items: center;
 }
 
 nav a{
     text-decoration: none;
-    padding: 15px;
-    color: #ff5733;
+    padding-block: 15px;
+    color: white;
     font-size: 15px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav a:hover{
-    background-color: #ff5733;
+    background-color: #daa520;
+    padding-inline: 5px;
     color: white;
     border-radius: 5px;
-    transition: ease-in-out 1s;
+    width: 120px;
+    transition: ease-in-out 0.5s;
+    text-align: center;
 }
 
 nav a:active{
@@ -89,8 +94,14 @@ nav a:active{
     border-radius: 5px;
 }
 
+nav a i{
+    font-size: 11px;
+    padding-right: 5px;
+}
+
+
 .formdiv{
-    background-color: transparent;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +109,7 @@ nav a:active{
     width: 78%;
     padding: 18px;
     margin-block: 60px;
-    border: 1px solid white;
+    border: 4px solid white;
 }
 
 .formsection{
@@ -116,19 +127,19 @@ nav a:active{
 
 
 aside{
-    height: 380px;
-    width: 40vh;
-    background-color: #ff5733;
+    height: 360px;
+    width: 30vh;
+    background-color: rgb(1, 1, 48);
     color: white;
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 45px;
+    margin-top: 30px;
 }
 
 aside p{
-    font-size: 15px;
+    font-size: 12px;
     padding: 5px;
 }
 
@@ -136,19 +147,29 @@ aside h3{
     padding: 5px;
 }
 
+#contactform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 36px;
+}
+
+#contactform h2{
+    color: white;
+}
 
 .formsection h2{
 font-weight: bolder;
-font-size: 50px;
-color: #ff5733 ;
+font-size: 30px;
+color: white ;
+}
+.formsection h4{
+    font-size: 15px;
+    color: white;
 }
 
 .divform{
     padding: 5px;
-}
-
-.divform h5{
-    margin-bottom: 8px;
 }
 
 .formflex{
@@ -157,19 +178,56 @@ color: #ff5733 ;
 }
 
 input[type=text], [type=tel], [type=mail]{
-    width: 300px;
-    height: 35px;
-    background-color: whitesmoke;
+    width: 290px;
+    height: 30px;
+    background-color: white;
     border: none;
     padding: 5px;
     border-radius: 3px;
+    border: 2px solid #daa520;
 }
+
+input[type=submit]{
+    height: 35px;
+    width: 100px;
+    background-color: #daa520;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-size: 14px;
+    font-weight: 600;
+    margin-block: 30px;
+    margin-inline: 5px;
+    color: white;
+}
+
+
+input[type=submit]:hover{
+    background-color: rgb(1, 1, 48);
+    border: 2px solid gray;
+    font-weight: 700;
+}
+
+input[type=submit]:active{
+    background-color: black;
+    color:rgb(1, 1, 48);
+}
+
+select{
+    background-color: whitesmoke;
+    color: black;
+    width: 310px;
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid #daa520;
+}
+
 
 .mapdiv{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-block: 40px;
+    margin-left: 100px;
 }
 
 footer{
@@ -180,6 +238,7 @@ footer{
     padding-inline: 40px;
     padding-block: 5px;
     font-size: 13px;
+    margin-left: 30px;
 }
 
 .footerdiv ul{
@@ -201,7 +260,7 @@ footer a{
 }
 
 .footerdiv li a:hover{
-    color: #ff5733;
+    color: #daa520;
 }
 
 .footerdiv li a:active{
@@ -224,73 +283,104 @@ gap: 10px;
 
 @media screen and (max-width:768px) {
     *{
-        margin: 0;
-        padding: 0;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+        overflow-x: clip;
     }
     
-        header{
-            display: block;
-            text-align: center;
-        }
-    
-        nav a{
-            display: block;
-        }
-    
-        nav a{
-            font-size: 15px;
-        }
-    
-        nav a:hover{
-            background-color: #ff5733;
-        }
+    header{ 
+        padding-inline: 20px;
+        padding-block: 20px;
+        height: 90px;
+        width: 90%; 
+        margin: auto;
 
+       
+    }
+    
+    header .logo img{
+       justify-content: center;
+    }
+    
+    nav{ 
+       background-color: rgb(1, 1, 48);
+       justify-content: center;
+       align-items: center;
+       flex-direction: row;
+       justify-content: space-evenly;
+       padding-inline: 30px;
+       width: 100%;
+    }
+    
+    nav a{
+        font-size: 8px;
+        padding-block: 10px;
+        padding-inline: 5px;
+    }
+    
+    nav a:hover{
+        width: 65px;
+    }
+    
+    nav a:active{
+        width: 65px;
+    }
 
-        #contactform{
-            height: 200vh;
-            margin: 0;
-            padding: 0;
-            }
+    nav a i{
+        font-size: 5px;
+    }
+
+    .bodydiv{
+        margin: auto;
+        padding-top: 80px;
+    }
+
+    #contactform{
+        height: 120vh;
+        margin: 0;
+        padding: 0;
         
-            #contactform h4, #contactform h5{
-            font-size: 10px;
-            }
-        
-            .formsection{
-            height: 100vh;
-            }
-        
-            .formdiv{
-            flex-direction: column-reverse;
-            height: 160vh;
-            border-radius: 5px;
-            }
-        
-            .formdiv h2{
-            font-size: 25px;
-            }
-        
-            .formflex{
+        }
+    
+        #contactform h4, #contactform h5{
+        font-size: 10px;
+        }
+    
+        .formsection{
+        height: 85vh;
+        }
+    
+        .formdiv{
+        flex-direction: column-reverse;
+        height: 140vh;
+        }
+    
+        .formdiv h2{
+        font-size: 25px;
+        }
+    
+        .formflex{
+        display: flex;
+        flex-direction: column;
+        }
+    
+        input[type=mail], input[type=tel], input[type=text], select, option{
+            width: 200px;
+            height: 30px;
+        }
+    
+        .submitbtn {
             display: flex;
-            flex-direction: column;
-            }
-        
-            input[type=mail], input[type=tel], input[type=text], select, option{
-                width: 200px;
-                height: 30px;
-            }
-        
-            .submitbtn {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        
-            aside{
-                width: 30vh;
-                height: 40vh;
-                border-radius: 5px;
-            }
+            justify-content: center;
+            align-items: center;
+        }
+    
+        aside{
+            width: 28vh;
+            height: 30vh;
+            border-radius: 5px;
+        }
 
             .mapdiv{
                 width: 400;
@@ -306,7 +396,7 @@ gap: 10px;
                 grid-template-rows: auto auto;
                 gap:5px;
                 margin: auto;
-                padding-inline:10px;
+                padding-inline:30px;
                 
                 }
                 .footerdiv:first-child{
@@ -315,6 +405,7 @@ gap: 10px;
                 }
             
                 footer .logo {
+                    margin: auto;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -332,4 +423,4 @@ gap: 10px;
                     font-size: 12px;
                 }
     }
- #550000
+ 

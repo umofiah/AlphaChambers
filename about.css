@@ -19,11 +19,21 @@ body{
 
 header{
     display: flex;
-    background-color:black;
-    justify-content: space-between;
-    justify-items: center;
+    flex-direction: column;
+    background-color:rgb(1, 1, 48);
+    justify-content: center;
     align-items: center;
-    padding-inline: 100px; 
+    position: fixed;
+    height: 100%;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: end;
+    align-items: center;
 }
 
 .headerlogo{
@@ -38,30 +48,45 @@ a{
  }
 
  #highlight{
-    border-bottom: 3px solid #ff5733;
-    border-radius: 2px;
-    transition: ease-in-out 1s;
+    color: #daa520;
+    transition: ease-in 1s;
 }
+
+#highlight:hover{
+    color: white;
+}
+
 
 nav a{
     text-decoration: none;
-    padding: 15px;
-    color: #ff5733;
+    padding-block: 15px;
+    color: white;
     font-size: 15px;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav a:hover{
-    background-color: #ff5733;
+    background-color: #daa520;
+    padding-inline: 5px;
     color: white;
     border-radius: 5px;
-    transition: ease-in-out 1s;
+    width: 120px;
+    transition: ease-in-out 0.5s;
+    text-align: center;
 }
 
 nav a:active{
     color:white ;
     background-color: black;
     border-radius: 5px;
+}
+
+nav a i{
+    font-size: 11px;
+    padding-right: 5px;
 }
 
 #aboutone{
@@ -71,6 +96,7 @@ nav a:active{
     padding-inline: 60px;
     padding-bottom: 20px;
     gap: 10px;
+    margin-left: 60px;
 }
 
 #aboutone main{
@@ -94,16 +120,17 @@ nav a:active{
     color: white;
     padding-inline: 55px;
     padding-top: 80px;
-    color:#ff5733;
+    color:#daa520;
 }
 
 .figures{
-    color: #ff5733;
+    color: #daa520;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-inline: 120px;
     padding-block: 40px;
+    margin-left: 60px;
 }
 
 .figures div{
@@ -144,18 +171,19 @@ nav a:active{
 }
 
 @keyframes Ruby{
-0%{color: #ff5733;}
+0%{color: #daa520;}
 50%{color: white;}
 }
 
 .figures div .one{
-border-right: #ff5733 1px solid;
+border-right: #daa520 1px solid;
 padding-right: 30px;
 }
 
 #abouttwo, #aboutthree{
     border-top: 8px solid white;
     padding-inline: 60px;
+    margin-left: 60px;
 }
 
 #abouttwo main{
@@ -194,7 +222,7 @@ button{
     height: 45px;
     width: 150px;
     color: black;
-    background-color: #ff5733;
+    background-color: #daa520;
     border: 1px solid white;
     font-size: 18px;
     color: white;
@@ -203,7 +231,7 @@ button{
 }
 
 button:hover{
-    background-color: #c94427;
+    background-color: rgb(1, 1, 48);
 }
 
 a button:active{
@@ -224,6 +252,7 @@ footer{
     background-color: black;
     color: white;
     padding-inline: 30px;
+    margin-left: 30px;
     padding-block: 5px;
     font-size: 13px;
 }
@@ -242,7 +271,7 @@ footer{
 }
 
 .footerdiv li a:hover{
-    color: #ff5733;
+    color: #daa520;
 }
 
 .footerdiv li a:active{
@@ -264,59 +293,100 @@ gap: 10px;
 
 @media screen and (max-width:768px) {
     *{
-        margin: 0;
-        padding: 0;
-        
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+        overflow-x: clip;
     }
    
 
-        header{
-            display: block;
-            text-align: center;
-        }
-    
-        nav a{
-            display: block;
-        }
-    
-        nav a{
-            font-size: 15px;
-        }
-    
-        nav a:hover{
-            background-color: #ff5733;
-        }
+        
+header{ 
+    padding-inline: 20px;
+    padding-block: 20px;
+    height: 90px;
+    width: 90%; 
+    margin-inline: auto;
+   
+}
 
-        .aboutintro h4{
-            text-align: center;
-            font-size: 20px;
-        }
+header .logo img{
+   justify-content: center;
+}
 
-        #aboutone{
-            padding-inline: 8px;
-            height: 75vh;
-        }
+nav{ 
+   background-color: rgb(1, 1, 48);
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   justify-content: space-evenly;
+   padding-inline: 30px;
+   width: 100%;
+}
 
-        .figures{
-            padding-inline: 10px;
-            padding-block: 20px;
-        }
+nav a{
+    font-size: 8px;
+    padding-block: 10px;
+    padding-inline: 5px;
+}
 
-        .figures div{
-            font-size: 10px;
-        }
+nav a:hover{
+    width: 65px;
+}
 
-        .figures span{
-            font-size:8px;
-            
-        }
+nav a:active{
+    width: 65px;
+}
+
+nav a i{
+    font-size: 5px;
+}
+
+#aboutone .aboutintro h4{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 160px;    
+    }
+
+ #aboutone{
+    height: 70vh;
+    width: 98vw;
+    margin: auto;
+    padding-inline: 1px;
+    font-size: 10px;
+    }
+
+ 
+
+.figures{
+    padding-inline: 10px;
+    padding-block: 20px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+ }
+
+.figures div{
+    font-size: 10px;
+}
+
+.figures span{
+    font-size:8px;
+    }
 
         .figures div .one{
-            margin-right: 8px;
+            margin-right: 10px;
         }
 
         #abouttwo{
             padding-inline: 8px;
+            margin: auto;
+        }
+
+        #abouttwo h4, #aboutthree h4{
+        text-align: center;
+        font-size: 20px;
+    
         }
 
         #abouttwo ul{
@@ -324,7 +394,11 @@ gap: 10px;
         }
 
         #aboutone main p, #abouttwo main ul li{
-            font-size: 12px;
+            font-size: 10px;
+        }
+
+        #aboutthree{
+            margin: auto;
         }
 
         #aboutthree main div{
@@ -338,7 +412,7 @@ gap: 10px;
 
         #aboutthree main i{
             font-size: 10px;
-            padding: 5px;
+            padding: 20px;
         }
     
         footer{
@@ -348,7 +422,7 @@ gap: 10px;
             grid-template-rows: auto auto;
             gap:5px;
             margin: auto;
-            padding-inline:10px;
+            padding-inline:30px;
             
             }
             .footerdiv:first-child{

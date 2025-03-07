@@ -5,13 +5,19 @@
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
     font-style: normal;
-    /* text-align:justify; */
+    text-rendering: optimizeLegibility;
+
+}
+
+body{
+    position: relative;
+    left: 0;
 }
 
 .backgroundimg{
     background: url(images/judge-8842046_1280.png);
     background-blend-mode: multiply;
-    background-color: rgb(59, 59, 59);
+    background-color:rgb(77, 76, 76);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -22,15 +28,18 @@
     padding-bottom: 30px;
     height: 100vh;
     
+    
 }
 
 header{
     display: flex;
-    background-color:transparent;
-    justify-content: space-between;
-    justify-items: center;
+    flex-direction: column;
+    background-color:rgb(1, 1, 48);
+    justify-content: center;
     align-items: center;
-    padding-inline: 100px; 
+    position: fixed;
+    height: 100%;
+    text-align: center;
 }
 
 .headerlogo{
@@ -41,38 +50,34 @@ header{
 
 #index .main1{
     color: white;
-    padding-block: 60px;
+    padding-block: 90px;
+    font-weight: 400;
+
 }
 
 #index p{
     font-size: 18px;
+    font-weight: 600;
+    margin-top: 50px;
+    padding-inline: 60px;
 }
 
 #index h2{
-    font-size: 45px;
+    font-size: 40px;
     margin-bottom: 20px;
     
 }
 
-span{
-    color: #ff5733;
-    /* color:#89CFF0; */
-    /* color: #00BFFF; */
-    /* color: #00BFFF; */
-    /* color: #1F75FE; */
-    /* color: #00CED1; */
-    /* color: #00BFFF; */
-    /* color: #1560bd; */
-    /* color: #F0E2B6; */
-    
+#index span{
+    color: #daa520;
 }
 
 
 #index main{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
+    text-align: center;
     padding-inline: 105px;
+    margin-left: 60px;
+    padding-top: 150px;
     
 }
 
@@ -86,10 +91,7 @@ border: 3px solid white;
 button{
     height: 35px;
     width: 120px;
-    /* background-color: #1560bd; */
-    background-color: #ff5733;
-    /* border:1px solid white; */
-    font-size: 18px;
+    background-color: #daa520;
     color: white;
     font-weight: 600;
     margin-top: 10px;
@@ -97,14 +99,18 @@ button{
 }
 
 button:hover{
-    background-color: #c94427;
+    background-color: rgb(1, 1, 48);
+    border: 2px solid gray;
+    font-weight: 700;
 }
 
 #highlight{
-    border-bottom: 3px solid #c94427;
-    /* border-bottom: 2px solid #1560bd; */
-    border-radius: 3px;
-    transition: ease-in-out 1s;
+    color: #daa520;
+    transition: ease-in 1s;
+}
+
+#highlight:hover{
+    color: white;
 }
 
 a button:active{
@@ -112,22 +118,38 @@ a button:active{
     color:black;
 }
 
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a i{
+    font-size: 11px;
+    padding-right: 5px;
+}
+
 
 nav a{
     text-decoration: none;
-    padding: 15px;
-    color: #ff5733;
-    /* color: #1560bd; */
+    padding-block: 15px;
+    color: white;
     font-size: 15px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav a:hover{
-    background-color: #ff5733;
-    /* background-color: #1560bd; */
+    background-color: #daa520;
+    padding-inline: 5px;
     color: white;
-    border-radius: 5px;
-    transition: ease-in-out 1s;
+    border-radius: 10px;
+    width: 120px ;
+    transition: ease-in-out 0.5s;
+    text-align: center;
 }
 
 nav a:active{
@@ -138,13 +160,14 @@ nav a:active{
 
 
 #about{   
-    height: 60vh;
+    height: 50vh;
     justify-content: space-between;
     padding-inline: 130px;
     align-items: center;
     padding-block: 80px;
     border-top: 8px solid white;
     background-color: whitesmoke;
+    margin-left: 60px;
 }
 
  a{
@@ -166,8 +189,12 @@ color: white;
 }
 
 h4{
-    color:#ff5733;
+    color:rgb(1, 1, 48);
     font-size: 23px;
+}
+
+#about span{
+    color: rgb(1, 1, 48);
 }
 
 .aboutintro{
@@ -182,6 +209,7 @@ h4{
     padding-inline: 140px;
     padding-block: 60px;
     border-top:8px solid white;
+    margin-left: 60px;
 }
 
 
@@ -198,6 +226,10 @@ h4{
     padding-block: 20px;
 }
 
+#services h4{
+    color: #daa520;
+}
+
 #services h5{
     font-size: 18px;
 }
@@ -210,7 +242,7 @@ h4{
 
 
 .servicesdiv i{
-    color: #ff5733;
+    color: #daa520;
     font-size: 1.5rem;
     animation-name: icon;
     animation-duration: 2s;
@@ -248,21 +280,33 @@ h4{
     color:white;
     padding-inline: 10px;
     padding-block: 20px;
-    border-bottom: 3px solid #ff5733;
     border-radius: 5px;
 }
+
+.servicesdiv:hover{
+    box-shadow:  2px 2px 6px 6px white;
+    transition:padding-inline 1s, 1s ease-in-out;
+}
+
+#services h4{
+    color: #daa520;
+}
+
+
 
 .servicesdiv h5, .services p{
     padding-bottom: 10px;
 }
+
 #ourteam{
     border-top:8px solid white;
     padding-block: 60px;
     height: 80vh;
     display: flex;
     align-items: center;
-    padding-inline: 140px;
+    padding-inline: 120px;
     background-color: white;
+    margin-left: 60px;
 }
 
 .navyteam{
@@ -276,6 +320,7 @@ padding-bottom: 30px;
 
 .navyteam h3{
     font-size: 40px;
+    color: rgb(1, 1, 48);
 }
 
 .navyteam p{
@@ -300,11 +345,16 @@ padding-bottom: 30px;
     padding-block: 40px;
     padding-inline: 80px;
     text-align: center;
+    margin-left: 60px;
 }
 
 #testimonials h3{
     font-size: 40px;
     color:white;
+}
+
+#testimonials h4{
+    color: #daa520;
 }
 
 .testimonial{
@@ -316,14 +366,15 @@ padding-bottom: 30px;
 }
 
 .test{
-    border: 1px solid #ff5733;
+    border: 2px solid #daa520;
     display: flex;
+    border-radius: 10px;
     justify-content:space-between;
     padding: 15px;
     flex-direction: column;
     text-align: center;
     color: white;
-    border-bottom: 4px solid #ff5733;
+    box-shadow: 1px 1px 1px 1px;
     height: 250px;
     width: 270px;
 }
@@ -341,6 +392,7 @@ padding-bottom: 30px;
 
 #contactform{
     background-color: white;
+    margin-left: 60px;
 }
 
 .formdiv{
@@ -352,7 +404,7 @@ padding-bottom: 30px;
     width: 78%;
     padding: 18px;
     margin-block: 60px;
-    border: 4px solid #ff5733;
+    border: 4px solid rgb(1, 1, 48);
 }
 
 .formsection{
@@ -372,7 +424,7 @@ padding-bottom: 30px;
 aside{
     height: 360px;
     width: 30vh;
-    background-color: #ff5733;
+    background-color: rgb(1, 1, 48);
     color: white;
     padding: 30px;
     display: flex;
@@ -386,8 +438,18 @@ aside p{
     padding: 5px;
 }
 
+
+
 aside h3{
     padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+aside h3 i{
+    font-size: 13px;
+    margin-top: 3px;
 }
 
 #contactform{
@@ -397,10 +459,14 @@ aside h3{
     padding-inline: 36px;
 }
 
+#contactform h2{
+    color: white;
+}
+
 .formsection h2{
 font-weight: bolder;
 font-size: 30px;
-color: #ff5733 ;
+color: rgb(1, 1, 48) ;
 }
 .formsection h4{
     font-size: 15px;
@@ -417,19 +483,19 @@ color: #ff5733 ;
 }
 
 input[type=text], [type=tel], [type=mail]{
-    width: 300px;
-    height: 35px;
+    width: 290px;
+    height: 30px;
     background-color: white;
     border: none;
     padding: 5px;
     border-radius: 3px;
-    border: 2px solid #ff5733;
+    border: 2px solid #daa520;
 }
 
 input[type=submit]{
     height: 35px;
     width: 100px;
-    background-color: #ff5733;
+    background-color: #daa520;
     border-radius: 5px;
     border: 1px solid white;
     font-size: 14px;
@@ -441,12 +507,14 @@ input[type=submit]{
 
 
 input[type=submit]:hover{
-    background-color: #c94427;
+    background-color: rgb(1, 1, 48);
+    border: 2px solid gray;
+    font-weight: 700;
 }
 
 input[type=submit]:active{
     background-color: black;
-    color:#ff5733;
+    color:rgb(1, 1, 48);
 }
 
 select{
@@ -455,7 +523,7 @@ select{
     width: 310px;
     height: 35px;
     border-radius: 5px;
-    border: 2px solid #ff5733;
+    border: 2px solid #daa520;
 }
 
 
@@ -467,6 +535,7 @@ footer{
     padding-inline: 80px;
     padding-block: 5px;
     font-size: 13px;
+    margin-left: 30px;
 }
 
 .footerdiv ul{
@@ -487,7 +556,7 @@ footer{
 }
 
 .footerdiv li a:hover{
-    color: #ff5733;
+    color: #daa520;
 }
 
 .footerdiv li a:active{
@@ -508,8 +577,8 @@ flex-direction: column;
 
 @media screen and (max-width:768px) {
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     overflow-x: hidden;
     overflow-x: clip;
 }
@@ -520,69 +589,85 @@ flex-direction: column;
     border: none;
     margin: none;
 }
-    header{
-        display: block;
-        text-align: center;
-    }
 
-    nav a{
-        display: block;
-        font-size: 12px;
-    }
+header{ 
+    padding-inline: 20px;
+    padding-block: 20px;
+    height: 90px;
+    width: 90%; 
+    margin: auto;
+   
+}
 
-    nav a:hover{
-        background-color: #ff5733;
-    }
+header .logo img{
+   justify-content: center;
+}
 
-    #index{
-        height: 155vh;
-        padding-inline: 20px;
-    }
+nav{ 
+   background-color: rgb(1, 1, 48);
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   justify-content: space-evenly;
+   padding-inline: 30px;
+   width: 100%;
+}
+
+nav a i{
+  font-size: 5px;
+}
+
+nav a{
+    font-size: 8px;
+    padding-block: 10px;
+    padding-inline: 5px;
+}
+
+nav a:hover{
+    width: 65px;
+}
+
+nav a:active{
+    width: 65px;
+}
+
+#index{
+    height: 72vh;
+}
+        
     
-    #index main{
-        flex-direction: column-reverse;
-        margin: auto;
-        padding-inline: 20px;
-    }
-
-    #index .main2 img{
-        width:300px;
-        height: 30vh;
-        margin: auto;
-
-    }
-
-    #index .main2{
-        margin-top: 40px;
-    }
-
-    #index .main1{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
+#index main{
+    width: 95vw;
+    padding-inline: 20px;
+    margin: auto;
+}
 
     #index .main1 h2{
-        font-size: 25px;
+        font-size: 26px;
     }
 
     #index .main1 p{
-        font-size: 14px;
-        flex-wrap: wrap;
-        margin-block: 20px;
+        font-size: 10px;
+        text-align: justify;
+        width: 300px;
+        padding-inline: 20px;
     }
 
+    .btn{
+       padding-inline: 30px;
+    }
     button{
      width: 80px;
      font-size: 12px;
-     margin: auto;
     }
 
     #about{
         height: 70vh;
-        font-size: 12px;
+        width: 95vw;
         padding-inline: 40px;
+        font-size: 12px;
+        text-align: justify;
+        margin: auto;
     }
 
     #about h3{
@@ -602,12 +687,13 @@ flex-direction: column;
         font-size: 15px;
         font-weight: 300;
         flex-wrap: wrap;
-        width: 40vh;
+        width: 80vw;
     }
 
     #services{
-        height: 160vh;
-        padding-inline: 40px;
+        margin: auto;
+        height: 150vh;
+        padding-inline: 30px;
     }
 
     #services h3{
@@ -626,8 +712,13 @@ flex-direction: column;
         align-items: center;
     }
 
+    .servicesdiv i{
+        font-size: 15px;
+        z-index: 11;
+    }
+
     .servicesdiv h5{
-        font-size: 10px;
+        font-size: 12px;
         text-align: center;
     }
 
@@ -635,10 +726,15 @@ flex-direction: column;
         text-align: center;
     }
     
+    #services button{
+        margin: auto;
+    }
+
     #ourteam{
-        padding-inline: 20px;
+        padding-inline: 30px;
         flex-direction: column;
         height: 90vh;
+        margin: auto;
     }
 
     #ourteam h4, #ourteam h3,  #testimonials h3{
@@ -659,6 +755,7 @@ flex-direction: column;
     #testimonials{
         height: 120vh;
         padding-inline: 20px;
+        margin: auto;
     }
 
    .testimonial{
@@ -708,7 +805,7 @@ flex-direction: column;
 
     input[type=mail], input[type=tel], input[type=text], select, option{
         width: 200px;
-        height: 30px;
+        height: 22px;
     }
 
     .submitbtn {
@@ -730,7 +827,7 @@ flex-direction: column;
     grid-template-rows: auto auto;
     gap:5px;
     margin: auto;
-    padding-inline:10px;
+    padding-inline:20px;
     
     }
     .footerdiv:first-child{
@@ -742,6 +839,7 @@ flex-direction: column;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: auto;
     }
 
     .footerdiv{
