@@ -746,7 +746,8 @@ nav a:hover{
     }
     
     #services button{
-        margin: auto;
+        margin-inline: auto;
+        margin-top: 30px;
     }
 
     #ourteam{
