@@ -185,6 +185,7 @@ input[type=text], [type=tel], [type=mail]{
     padding: 5px;
     border-radius: 3px;
     border: 2px solid #daa520;
+    margin-top: 6px;
 }
 
 input[type=submit]{
@@ -195,7 +196,7 @@ input[type=submit]{
     border: 1px solid white;
     font-size: 14px;
     font-weight: 600;
-    margin-block: 30px;
+    margin-block: 20px;
     margin-inline: 5px;
     color: white;
 }
@@ -233,10 +234,11 @@ select{
 footer{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: black;
     color: white;
     padding-inline: 40px;
-    padding-block: 5px;
+    padding-block: 10px;
     font-size: 13px;
     margin-left: 30px;
 }
@@ -290,14 +292,12 @@ gap: 10px;
     }
     
     header{ 
-        padding-inline: 20px;
         padding-block: 20px;
-        height: 90px;
-        width: 90%; 
+        height: 10%;
+        width: 100%; 
         margin: auto;
-
        
-    }
+    } 
     
     header .logo img{
        justify-content: center;
@@ -308,28 +308,23 @@ gap: 10px;
        justify-content: center;
        align-items: center;
        flex-direction: row;
-       justify-content: space-evenly;
-       padding-inline: 30px;
+       padding-inline: 10px;
        width: 100%;
     }
     
-    nav a{
-        font-size: 8px;
-        padding-block: 10px;
-        padding-inline: 5px;
-    }
-    
-    nav a:hover{
-        width: 65px;
-    }
-    
-    nav a:active{
-        width: 65px;
-    }
-
     nav a i{
-        font-size: 5px;
-    }
+        font-size: 4px;
+      }
+      
+      nav a{
+          font-size: 6px;
+          padding-block: 10px;
+          padding-inline: 8px;
+      }
+      
+      nav a:hover{
+          width:20%;
+      }
 
     .bodydiv{
         margin: auto;
@@ -337,9 +332,11 @@ gap: 10px;
     }
 
     #contactform{
-        height: 120vh;
+        height: auto;
         margin: 0;
         padding: 0;
+        width: 95%;
+        padding-inline: 10px;
         
         }
     
@@ -348,12 +345,13 @@ gap: 10px;
         }
     
         .formsection{
-        height: 85vh;
+        height: auto;
+        width: 70%;
         }
     
         .formdiv{
         flex-direction: column-reverse;
-        height: 140vh;
+        height: auto;
         }
     
         .formdiv h2{
@@ -366,8 +364,8 @@ gap: 10px;
         }
     
         input[type=mail], input[type=tel], input[type=text], select, option{
-            width: 200px;
-            height: 30px;
+            width: 85%;
+            height: auto;
         }
     
         .submitbtn {
@@ -377,50 +375,210 @@ gap: 10px;
         }
     
         aside{
-            width: 28vh;
-            height: 30vh;
+            width: 68%;
+            height: auto;
             border-radius: 5px;
         }
 
+        aside i{
+            font-size: 10px;
+        }
+
             .mapdiv{
-                width: 400;
-                height: 200;
+                width: 80%;
+                height: auto;
                 margin: auto;
                 padding-inline: 30px;
                 padding-block: 20px;
             }
-            footer{
-                width: 350px;
-                display: grid;
-                grid-template-columns:repeat(3, 30%);
-                grid-template-rows: auto auto;
-                gap:5px;
-                margin: auto;
-                padding-inline:30px;
-                
-                }
-                .footerdiv:first-child{
-                grid-column: 1 / -1;
-                margin: auto;
-                }
             
-                footer .logo {
-                    margin: auto;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-            
-                .footerdiv{
-                margin: auto;
-                }
-            
-                footer ul li, .footerdiv a, .footerdiv p{
-                    font-size: 9px;
-                }
-            
-                .footerdiv ul .firstchild{
-                    font-size: 12px;
-                }
+    footer{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns:repeat(3, 30%);
+        grid-template-rows: auto auto;
+        margin: auto;
+        padding-inline: 2px;
+        }
+        .footerdiv:first-child{
+        grid-column: 1 / span 3;
+        }
+    
+        footer .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+    
+        .footerdiv{
+        margin: auto;
+        }
+    
+        footer ul li, .footerdiv a, .footerdiv p{
+            font-size: 9px;
+        }
+    
+        .footerdiv ul .firstchild{
+            font-size: 12px;
+        }
     }
  
+    @media screen and (min-width:768px) and (max-width:1024px){
+        *{
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+            overflow-x: clip;
+        }
+        
+        
+        .backgroundimg{
+            padding: none;
+            border: none;
+            margin: none;
+        }
+    
+        
+    header{ 
+        padding-block: 20px;
+        height: 10%;
+        width: 100%; 
+        margin: auto;
+       
+    } 
+    
+     header .logo img{
+       justify-content: center;
+    }
+    
+    nav{ 
+       background-color: rgb(1, 1, 48);
+       justify-content: center;
+       align-items: center;
+       flex-direction: row;
+       width: 100%;
+       padding-inline: 10px;
+    }
+    
+    nav a i{
+      font-size: 8px;
+      margin-top: 2px;
+    }
+    
+    nav a{
+        font-size: 15px;
+        padding-block: 10px;
+        padding-inline: 30px;
+        gap: 2px;
+    }
+    
+    nav a:hover{
+        width:20%;
+    }
+
+    
+    .bodydiv{
+        margin: auto;
+        padding-top: 250px;
+    }
+
+    #contactform{
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-block: 10px;
+        width: 30%;
+        padding-inline: 50px;
+        
+        }
+    
+        #contactform h4, #contactform h5{
+        font-size: 15px;
+        }
+    
+        .formsection{
+        height: auto;
+        width: 80%;
+    
+        }
+    
+        .formdiv{
+            padding-inline: 40px;
+        flex-direction: column-reverse;
+        height: auto;
+        margin: auto;
+        }
+    
+        .formdiv h2{
+        font-size: 25px;
+        }
+    
+        .formflex{
+        display: flex;
+        }
+    
+        input[type=mail], input[type=tel], input[type=text]{
+            width: 90%;
+            height: 22px;
+            margin-right: 20px;
+        }
+    
+    
+        .submitbtn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        aside{
+            font-size: 25px;
+            width:75%;
+            height: auto;
+            border-radius: 5px;
+        }
+    
+        .mapdiv{
+            width: 88%;
+            height: auto;
+            margin: auto;
+            padding-inline: 28px;
+            padding-block: 40px;
+        }
+
+    footer{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns:repeat(3, 30%);
+        grid-template-rows: auto auto;
+        margin: auto;
+        padding-block: 20px;
+        padding-inline: 10px;
+
+        }
+        .footerdiv:first-child{
+        grid-column: 1 /span 3;
+        }
+    
+        footer .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+    
+        .footerdiv{
+        margin: auto;
+        }
+    
+        footer ul li, .footerdiv a, .footerdiv p{
+            font-size: 12px;
+        }
+    
+        .footerdiv ul .firstchild{
+            font-size: 16px;
+        }
+    }
