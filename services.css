@@ -7,7 +7,7 @@
 }
 
 body{
-    background: url(images/judge-8842046_1280.png);
+    background:  url(images/pexels-ekaterina-bolovtsova-6077123.jpg);
     background-blend-mode: multiply;
     background-color: rgb(36, 35, 35);
     background-position:top;
@@ -42,8 +42,8 @@ nav{
 
 button{
     height: 48px;
-    width: 150px;
-    background-color: #daa520;
+    width: 250px;
+    background-color: chocolate;
     border-radius: 5px;
     border: 1px solid white;
     font-size: 14px;
@@ -62,7 +62,7 @@ a button:active{
 }
 
 #highlight{
-    color: #daa520;
+    color: chocolate;
     transition: ease-in 1s;
 }
 
@@ -82,7 +82,7 @@ nav a{
 }
 
 nav a:hover{
-    background-color: #daa520;
+    background-color: chocolate;
     padding-inline: 5px;
     color: white;
     border-radius: 5px;
@@ -150,7 +150,7 @@ h3, h4, p{
 
 h3,h4{
     font-size: 25px;
-    color: #daa520;
+    color: chocolate;
 }
 
 

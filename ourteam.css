@@ -6,7 +6,7 @@
     font-style: normal;
 }
 body{
-    background: url(images/judge-8842046_1280.png);
+    background:  url(images/pexels-ekaterina-bolovtsova-6077123.jpg);
     background-blend-mode: multiply;
     background-color: rgb(70, 69, 69);
     background-position: center;
@@ -42,7 +42,7 @@ header{
 
 .teamintro h3{
     font-size: 32px;
-    color:#daa320;
+    color:chocolate;
 }
 
 .teamintro p{
@@ -90,7 +90,7 @@ header{
 
 .teamdiv h4{
 font-size: 18px;
-color: #daa520;
+color: chocolate;
 }
 
 .teamdiv p{
@@ -99,9 +99,9 @@ font-size: 15px;
 
 button{
     height: 48px;
-    width: 150px;
+    width: 250px;
     color: black;
-    background-color: #daa520;
+    background-color: chocolate;
     border-radius: 5px;
     border: 1px solid white;
     font-size: 14px;
@@ -120,7 +120,7 @@ a button:active{
 }
 
 #highlight{
-    color: #daa520;
+    color: chocolate;
     transition: ease-in 1s;
 }
 
@@ -149,7 +149,7 @@ nav a{
 }
 
 nav a:hover{
-    background-color: #daa520;
+    background-color: chocolate;
     padding-inline: 5px;
     color: white;
     border-radius: 5px;
@@ -218,7 +218,7 @@ gap: 10px;
 }
 
 .footerdiv li a:hover{
-    color: #daa520;
+    color: chocolate;
 }
 
 .footerdiv li a:active{

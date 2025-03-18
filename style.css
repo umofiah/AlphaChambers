@@ -11,13 +11,14 @@
 
 
 .backgroundimg{
-    background: url(images/judge-8842046_1280.png);
+    background: url(images/pexels-ekaterina-bolovtsova-6077123.jpg);
     background-blend-mode: multiply;
-    background-color:rgb(77, 76, 76);
+    background-color:rgb(85, 84, 84);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    /* background-color: rgb(1, 1, 48); */
 }
 
 #index{
@@ -30,7 +31,7 @@
 header{
     display: flex;
     flex-direction: column;
-    background-color:rgb(1, 1, 48);
+    background-color: rgb(1, 1, 48);
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -49,7 +50,7 @@ header{
     text-align: center;
     padding-inline: 105px;
     margin-left: 60px;
-    padding-top: 180px; 
+    padding-top: 200px; 
     
 }
 
@@ -67,7 +68,8 @@ header{
 }
 
 #index span{
-    color: #daa520;
+    /* color: chocolate; */
+    color: chocolate;
 }
 
 
@@ -81,13 +83,18 @@ gap: 20px;
 
 .secondbutton{
     background-color: rgb(56, 55, 55);
+    color: white;
+}
+
+.secondbutton:hover{
+    color: rgb(1, 1, 48);
 }
 
 button{
     height: 35px;
-    width: 120px;
-    background-color: #daa520;
-    color: white;
+    width: 180px;
+    background-color: chocolate;
+    color: black;
     font-weight: 600;
     margin-top: 10px;
     border-radius: 5px;
@@ -95,18 +102,23 @@ button{
 }
 
 button:hover{
-    background-color: rgb(1, 1, 48);
-    border: 2px solid gray;
+    background-color: gray;
+    border: 2px solid white;
     font-weight: 700;
+    cursor: pointer;
 }
 
 #highlight{
-    color: #daa520;
+    color: white;
+    border-bottom: 3px solid white;
+    border-radius: 1px;
     transition: ease-in 1s;
 }
 
 #highlight:hover{
     color: white;
+    border: none;
+    border-radius: 3px;
 }
 
 a button:active{
@@ -139,8 +151,8 @@ nav a{
 }
 
 nav a:hover{
-    background-color: #daa520;
-    padding-inline: 5px;
+    background-color: chocolate;
+    padding-inline: 6px;
     color: white;
     border-radius: 10px;
     width: 100%;
@@ -232,7 +244,7 @@ h4{
 }
 
 #services h4{
-    color: #daa520;
+    color: chocolate;
 }
 
 #services h5{
@@ -247,7 +259,7 @@ h4{
 
 
 .servicesdiv i{
-    color: #daa520;
+    color: chocolate;
     font-size: 1.5rem;
     animation-name: icon;
     animation-duration: 3s;
@@ -294,7 +306,7 @@ h4{
 }
 
 #services h4{
-    color: #daa520;
+    color: chocolate;
 }
 
 
@@ -359,7 +371,7 @@ padding-bottom: 30px;
 }
 
 #testimonials h4{
-    color: #daa520;
+    color: chocolate;
 }
 
 .testimonial{
@@ -371,7 +383,7 @@ padding-bottom: 30px;
 }
 
 .test{
-    border: 2px solid #daa520;
+    border: 2px solid chocolate;
     display: flex;
     border-radius: 10px;
     justify-content:space-between;
@@ -494,25 +506,25 @@ input[type=text], [type=tel], [type=mail]{
     border: none;
     padding: 5px;
     border-radius: 3px;
-    border: 2px solid #daa520;
+    border: 2px solid chocolate;
 }
 
 input[type=submit]{
     height: 35px;
-    width: 100px;
-    background-color: #daa520;
+    width: 200px;
+    background-color: chocolate;
     border-radius: 5px;
     border: 1px solid white;
     font-size: 14px;
     font-weight: 600;
     margin-block: 30px;
     margin-inline: 5px;
-    color: white;
+    color: rgb(1, 1, 48);
 }
 
 
 input[type=submit]:hover{
-    background-color: rgb(1, 1, 48);
+    background-color: white;
     border: 2px solid gray;
     font-weight: 700;
 }
@@ -528,7 +540,7 @@ select{
     width: 310px;
     height: 35px;
     border-radius: 5px;
-    border: 2px solid #daa520;
+    border: 2px solid chocolate;
 }
 
 
@@ -562,7 +574,7 @@ footer{
 }
 
 .footerdiv li a:hover{
-    color: #daa520;
+    color: chocolate;
 }
 
 .footerdiv li a:active{

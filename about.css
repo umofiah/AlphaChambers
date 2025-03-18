@@ -8,7 +8,7 @@
 }
 
 body{
-    background: url(images/judge-8842046_1280.png);
+    background: url(images/pexels-ekaterina-bolovtsova-6077123.jpg);
     background-blend-mode: multiply;
     background-color: rgb(70, 69, 69);
     background-position:center;
@@ -48,7 +48,7 @@ a{
  }
 
  #highlight{
-    color: #daa520;
+    color: chocolate;
     transition: ease-in 1s;
 }
 
@@ -69,7 +69,7 @@ nav a{
 }
 
 nav a:hover{
-    background-color: #daa520;
+    background-color: chocolate;
     padding-inline: 5px;
     color: white;
     border-radius: 5px;
@@ -117,14 +117,13 @@ nav a i{
 .aboutintro h4{
     text-align: left;
     font-size: 30px;
-    color: white;
     padding-inline: 55px;
     padding-top: 80px;
-    color:#daa520;
+    color: chocolate;
 }
 
 .figures{
-    color: #daa520;
+    color: chocolate;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -171,12 +170,12 @@ nav a i{
 }
 
 @keyframes Ruby{
-0%{color: #daa520;}
+0%{color: chocolate;}
 50%{color: white;}
 }
 
 .figures div .one{
-border-right: #daa520 1px solid;
+border-right: chcolor: chocolate; 1px solid;
 padding-right: 30px;
 }
 
@@ -222,7 +221,7 @@ button{
     height: 45px;
     width: 150px;
     color: black;
-    background-color: #daa520;
+    background-color: chocolate;
     border: 1px solid white;
     font-size: 18px;
     color: white;
@@ -272,7 +271,7 @@ footer{
 }
 
 .footerdiv li a:hover{
-    color: #daa520;
+    color: chocolate;
 }
 
 .footerdiv li a:active{
