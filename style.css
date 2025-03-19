@@ -694,8 +694,8 @@ nav a:hover{
 
     button{
         width: 100%;
-        font-size: 10px;
-        padding-inline: 10px;
+        font-size: 14px;
+        padding-inline: 18px;
        }
 
     #about{
@@ -866,7 +866,7 @@ nav a:hover{
     }
 
     input[type=submit]{
-        width: 100px;
+        width: 130px;
     }
 
     .submitbtn{
@@ -1010,7 +1010,8 @@ nav a:hover{
     button, input[type=submit]{
         width: 100%;
         font-size: 18px;
-        padding-inline: 15px;
+        text-align: center;
+        padding-inline: 30px;
        }
 
 
@@ -1037,10 +1038,16 @@ nav a:hover{
 
     .btn{
         padding-inline: 80px;
-        display: flex;
+        padding-block: 40px;
         justify-content: center;
         align-items: center;
         margin: auto;
+    }
+
+    .btn a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #about main p{
